@@ -1,5 +1,5 @@
 {
-  "name": "@nuxtjs/vuetify",
+  "name": "@HypoFriend/vuetify",
   "version": "1.12.3",
   "description": "Vuetify Module for Nuxt.js",
   "license": "MIT",
@@ -9,6 +9,9 @@
     },
     {
       "name": "Kevin Marrec (@kevinmarrec)"
+    },
+    {
+      "name": "Pavel Jurasek"
     }
   ],
   "main": "dist/index.js",
@@ -23,7 +26,7 @@
     "lint": "eslint --ext .ts,.js,.vue .",
     "test": "yarn lint && jest",
     "release": "yarn test && yarn build && standard-version && git push --follow-tags && npm publish",
-    "prepare": "husky install"
+    //"prepare": "husky install"
   },
   "files": [
     "dist",
