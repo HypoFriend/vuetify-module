@@ -11,13 +11,14 @@ export type IconPreset = keyof typeof presetsCDN;
 
 const setupIcons: Module<IconPreset> = function (preset) {
   // istanbul ignore else
+  
   if (presetsCDN[preset] && typeof this.options.head === "object") {
-    this.options.head!.link!.push({
+    /*this.options.head!.link!.push({
       rel: "preload",
       as: "style",
       href: presetsCDN[preset],
       onload: `this.onload=null;this.rel='stylesheet'`,
-    });
+    });*/
   }
 };
 

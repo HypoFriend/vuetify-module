@@ -7,12 +7,12 @@ const presetsCDN = {
 const setupIcons = function (preset) {
     // istanbul ignore else
     if (presetsCDN[preset] && typeof this.options.head === "object") {
-        this.options.head.link.push({
-            rel: "preload",
-            as: "style",
-            href: presetsCDN[preset],
-            onload: `this.onload=null;this.rel='stylesheet'`,
-        });
+        /*this.options.head!.link!.push({
+          rel: "preload",
+          as: "style",
+          href: presetsCDN[preset],
+          onload: `this.onload=null;this.rel='stylesheet'`,
+        });*/
     }
 };
 export default setupIcons;
